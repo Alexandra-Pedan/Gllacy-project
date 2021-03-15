@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Глейси</title>
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body class="body body_green">
+    <div class="container">
+      <header class="header page__header page__wrapper">
+        <a class="header__logo">
+          <img
+            class="header__logo-pic"
+            src="./img/content/logo.svg"
+            alt="Логотип магазина `Глэйси`"
+            width="154"
+            height="64">
+        </a>
+
+        <nav>
+          <ul class="main-navigation">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="./blank.html">
+                Каталог
+              </a>
+
+              <ul class="inner-list main-navigation__inner-list">
+                <li class="inner-list__item inner-list__item_special">
+                  <a class="inner-list__link" href="./blank.html">Новинки</a>
+                </li>
+
+                <li class="inner-list__item">
+                  <a class="inner-list__link" href="catalog.html">Сливочное</a>
+                </li>
+
+                <li class="inner-list__item">
+                  <a class="inner-list__link" href="./blank.html">Щербеты</a>
+                </li>
+
+                <li class="inner-list__item">
+                  <a class="inner-list__link" href="./blank.html">Фруктовый лед</a>
+                </li>
+
+                <li class="inner-list__item">
+                  <a class="inner-list__link" href="./blank.html">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="./blank.html">
+                Доставка и оплата
+              </a>
+            </li>
+
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="./blank.html">
+                О компании
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="user-navigation header__user-navigation">
+          <li class="user-navigation__item">
+            <div class="user-navigation__button user-navigation__button_search">
+              <svg
+                class="user-navigation__icon-search"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <use xlink:href="#search"></use>
+              </svg>
+              <span class="visually-hidden">Поиск по сайту</span>
+            </div>
+
+            <form
+              class="header__form search-form user-navigation__search-form"
+              action="https://echo.htmlacademy.ru/"
+              method="get"
+            >
+              <label class="visually-hidden" for="form-search">Поле поиска</label>
+              <input
+                class="input-field search-form__field"
+                type="text"
+                name="form-search"
+                id="form-search"
+                placeholder="Крем-брюле">
+            </form>
+          </li>
+
+          <li class="user-navigation__item">
+            <div class="user-navigation__button user-navigation__button_sign">
+              <svg
+                class="user-navigation__icon-sign"
+                width="20"
+                height="19"
+                viewBox="0 0 20 19"
+                aria-hidden="true"
+              >
+                <use xlink:href="#sign"></use>
+              </svg>
+              Вход
+            </div>
+
+            <form
+              class="header__form sign-form user-navigation__sign-form"
+              action="https://echo.htmlacademy.ru/"
+              method="get"
+              name="form-sign"
+            >
+              <label class="visually-hidden" for="sign-email">Логин</label>
+              <input
+                class="input-field sign-form__email"
+                type="email"
+                name="sign-email"
+                id="sign-email"
+                placeholder="example@email.com">
+
+              <label class="visually-hidden" for="sign-password">Пароль</label>
+              <input
+                class="input-field sign-form__password"
+                type="password"
+                name="sign-password"
+                id="sign-password"
+                placeholder="......">
+
+              <button class="button sign-form__button" type="submit">
+                Войти
+              </button>
+
+              <ul class="help-list">
+                <li class="help-list__item">
+                  <a class="help-list__link" href="./blank.html">
+                    Забыли пароль?
+                  </a>
+                </li>
+                <li class="help-list__item">
+                  <a class="help-list__link" href="./blank.html">
+                    Новая регистрация
+                  </a>
+                </li>
+              </ul>
+            </form>
+          </li>
+
+          <li class="user-navigation__item">
+            <a class="user-navigation__button user-navigation__button_cart">
+              <svg
+                class="user-navigation__icon-cart"
+                width="21"
+                height="20"
+                viewBox="0 0 21 20"
+                aria-hidden="true"
+              >
+                <use xlink:href="#cart"></use>
+              </svg>
+              <span class="visually-hidden">Корзина</span>
+              <span id="cart-status">Пусто</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="info header__info">
+          <p class="info__time">c 10 до 20, ежедневно</p>
+          <a href="tel:+380669999999" class="info__phone" aria-label="Позвоните нам: +38 066 999-99-99">
+            +38 066 999-99-99
+          </a>
+        </div>
+      </header>
+
+      <main class="main page__main-index">
+        <h1 class="visually-hidden">Магазин "Глэйси"</h1>
+
+        <section class="carousel main__carousel page__wrapper">
+          <h2 class="visually-hidden">Промо-товары</h2>
+
+          <div class="carousel__switches">
+            <button class="carousel__switch" type="button">
+              <span class="visually-hidden">Первый слайд</span>
+              <svg
+                class="switch switch_current"
+                width="22"
+                height="21"
+                fill="white"
+                viewBox="0 0 22 21"
+                aria-hidden="true"
+              >
+                <use xlink:href="#promo-btn"></use>
+              </svg>
+            </button>
+
+            <button class="carousel__switch" type="button">
+              <span class="visually-hidden">Второй слайд</span>
+              <svg
+                class="switch"
+                width="22"
+                height="21"
+                fill="white"
+                viewBox="0 0 22 21"
+                aria-hidden="true"
+              >
+                <use xlink:href="#promo-btn"></use>
+              </svg>
+            </button>
+
+            <button class="carousel__switch" type="button">
+              <span class="visually-hidden">Третий слайд</span>
+              <svg
+                class="switch"
+                width="22"
+                height="21"
+                fill="white"
+                viewBox="0 0 22 21"
+                aria-hidden="true"
+              >
+                <use xlink:href="#promo-btn"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="carousel__slide-list">
+            <li class="slide slide_current">
+              <img
+                class="slide__pic"
+                src="./img/content/index-promo/ice-cream-promo1.png"
+                alt="Картинка с мороженным `Крем брюле и пломбир с малиновым джемом`"
+                width="716"
+                height="716"
+              >
+              <div class="slide__wrapper">
+                <h3 class="slide__title">
+                  Крем брюле и пломбир с малиновым джемом
+                </h3>
+                <a class="button carousel__button" href="./blank.html">
+                  Давайте оба!
+                </a>
+              </div>
+            </li>
+
+            <li class="slide">
+              <img
+                class="slide__pic"
+                src="./img/content/index-promo/ice-cream-promo2.png"
+                alt="Картинка с мороженным `Шоколадный пломбир и лимонный сорбет`"
+                width="716"
+                height="716"
+              >
+              <div class="slide__wrapper">
+                <h3 class="slide__title">
+                  Шоколадный пломбир и лимонный сорбет
+                </h3>
+                <a class="button carousel__button" href="./blank.html">
+                  Давайте оба!
+                </a>
+              </div>
+            </li>
+
+            <li class="slide">
+              <img
+                class="slide__pic"
+                src="./img/content/index-promo/ice-cream-promo3.png"
+                alt="Картинка с мороженным `Пломбир с помадкой и клубничный щербет`"
+                width="716"
+                height="716"
+              >
+              <div class="slide__wrapper">
+                <h3 class="slide__title">
+                  Пломбир с помадкой и клубничный щербет
+                </h3>
+                <a class="button carousel__button" href="./blank.html">
+                  Давайте оба!
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <div class="main__content-wrapper page__wrapper">
+          <section class="sales">
+            <h2 class="visually-hidden">Акции</h2>
+
+            <ul class="sales__items">
+              <li class="sales__item sales_raspberry">
+                <h3 class="sales__title">Малинка даром!</h3>
+                <p class="sales__text">
+                  При покупке 2 кг любого фруктового мороженого, добавим в ваш
+                  заказ банку малинового варенья бесплатно.
+                </p>
+                <button class="button sales__button" type="button">
+                  Хочу варенья!
+                </button>
+              </li>
+
+              <li class="sales__item sales_choco">
+                <h3 class="sales__title">Шоколадки даром!</h3>
+                <p class="sales__text">
+                  При покупке 2 кг пломбира, добавим в ваш заказ упаковку
+                  вкуснейшей шоколадной присыпки совершенно бесплатно.
+                </p>
+                <button class="button sales__button" type="button">
+                  Хочу шоколадки!
+                </button>
+              </li>
+            </ul>
+          </section>
+
+          <section class="bestsellers">
+            <h2 class="visually-hidden">Хиты продаж</h2>
+
+            <ul class="bestsellers__product-list">
+              <li class="product-card product-card_prime">
+                <img
+                  class="product-card__pic"
+                  src="./img/content/product/orange_jam.jpg"
+                  alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой"
+                  width="267"
+                  height="267"
+                >
+                <div class="product-card__wrapper">
+                  <p class="product-card__price">310 ₴<span>/кг</span></p>
+                  <h3 class="product-card__name">
+                    <a class="product-card__link" href="./blank.html">
+                      Сливочное с апельсиновым джемом и цитрусовой стружкой
+                    </a>
+                  </h3>
+                </div>
+                <a class="button product-card__button" href="./blank.html">
+                  Быстрый просмотр
+                </a>
+              </li>
+
+              <li class="product-card product-card_prime">
+                <img
+                  class="product-card__pic"
+                  src="./img/content/product/choco_coffee.jpg"
+                  alt="Мороженое сливочно-кофейное с кусочками шоколада"
+                  width="267"
+                  height="267"
+                >
+                <div class="product-card__wrapper">
+                  <p class="product-card__price">380 ₴<span>/кг</span></p>
+                  <h3 class="product-card__name">
+                    <a class="product-card__link" href="./blank.html">
+                      Сливочно-кофейное с кусочками шоколада
+                    </a>
+                  </h3>
+                </div>
+                <a class="button product-card__button" href="./blank.html">
+                  Быстрый просмотр
+                </a>
+              </li>
+
+              <li class="product-card product-card_prime">
+                <img
+                  class="product-card__pic"
+                  src="./img/content/product/strawberry_white_choco.jpg"
+                  alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада"
+                  width="267"
+                  height="267"
+                >
+                <div class="product-card__wrapper">
+                  <p class="product-card__price">355 ₴<span>/кг</span></p>
+                  <h3 class="product-card__name">
+                    <a class="product-card__link" href="./blank.html">
+                      Сливочно-клубничное <br />с присыпкой из белого шоколада
+                    </a>
+                  </h3>
+                </div>
+                <a class="button product-card__button" href="./blank.html">
+                  Быстрый просмотр
+                </a>
+              </li>
+
+              <li class="product-card product-card_prime">
+                <img
+                  class="product-card__pic"
+                  src="./img/content/product/cremebrulee.jpg"
+                  alt="Мороженое сливочное крем-брюле с карамельной подливкой"
+                  width="267"
+                  height="267"
+                >
+                <div class="product-card__wrapper">
+                  <p class="product-card__price">415 ₴<span>/кг</span></p>
+                  <h3 class="product-card__name">
+                    <a class="product-card__link" href="./blank.html">
+                      Сливочное крем-брюле <br />с карамельной подливкой
+                    </a>
+                  </h3>
+                </div>
+                <a class="button product-card__button" href="./blank.html">
+                  Быстрый просмотр
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="about">
+            <h2 class="visually-hidden">О нас</h2>
+
+            <p class="about__title">
+              Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого
+              собственного производства на развес
+            </p>
+
+            <ul class="features">
+              <li class="features__item features__item_tech">
+                Все наше мороженое изготавливается на собственном производстве,
+                с использованием современного оборудования и проверенных
+                временем технологий.
+              </li>
+
+              <li class="features__item features__item_wrnt">
+                Закупка ингредиентов производится только у проверенных
+                фермерских хозяйств и компаний, с которыми нас связывает
+                долговременное сотрудничество.
+              </li>
+
+              <li class="features__item features__item_eco">
+                Для приготовления мороженого используются настоящие сливки и
+                молоко высочайшего качества. Все дополнительные ингредиенты и
+                добавки произведены из натурального, экологически чистого сырья.
+              </li>
+
+              <li class="features__item features__item_delivery">
+                Доставка нашего мороженого до заказчиков осуществляется в
+                специальном термопаке, который не дает мороженому растаять в
+                пути и позволяет сохранить превосходный вкус.
+              </li>
+            </ul>
+          </section>
+
+          <div class="main__wrapper">
+            <section class="news">
+              <h2 class="visually-hidden">Наши новости</h2>
+
+              <p class="news__title">Новое в нашем блоге</p>
+              <article class="blog">
+                <a class="blog__link" href="./blank.html">
+                  <h3 class="blog__title">
+                    10 способов сервировки фруктовых щербетов<br />к столу
+                  </h3>
+                </a>
+              </article>
+            </section>
+
+            <section class="subscribe">
+              <h2 class="visually-hidden">Подписка на рассылку</h2>
+
+              <div class="subscribe__wrapper">
+                <p class="subscribe__text">
+                  Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе
+                  всего самого вкусного, что у нас происходит. Обещаем не
+                  спамить и не слать всякой ненужной ерунды. Честно =)
+                </p>
+
+                <form
+                  class="subscribe-form"
+                  action="https://echo.htmlacademy.ru/"
+                  method="get"
+                  name="form-subscribe"
+                >
+                  <label class="visually-hidden" for="subscribe-email">
+                    Введите элекронную почту
+                  </label>
+                  <input
+                    class="input-field subscribe-form__field"
+                    type="text"
+                    name="subscribe-email"
+                    id="subscribe-email"
+                    placeholder="email@example.com">
+
+                  <button class="button subscribe-form__button" type="submit">
+                    Отправить
+                  </button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <section class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+
+          <iframe
+            class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.757718129088!2d30.51674859374217!3d50.43149920940753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9428da0b5492490!2z0J7Qu9C40LzQv9C40LnRgdC60LjQuQ!5e0!3m2!1sru!2sua!4v1615835419009!5m2!1sru!2sua"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+          <div class="contacts__box">
+            <dl class="contacts__info">
+              <dt class="contacts__title">
+                Адрес главного офиса <br />и офлайн-магазина:
+              </dt>
+              <dd class="contacts__text">
+                ул. Большая Васильковская, 72, Киев
+              </dd>
+
+              <dt class="contacts__title">
+                Для заказов по телефону:
+              </dt>
+              <dd class="contacts__text">
+                <a class="contacts__link" href="tel:+380669999999">+38 066 999-99-99</a>
+                <span>(с 10 до 20 ежедневно)</span>
+              </dd>
+            </dl>
+            <a class="button contacts__button" href="./writeus.html">
+              Форма обратной связи
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer page__footer page__wrapper">
+        <section class="socials">
+          <h2 class="visually-hidden">Соцсети</h2>
+
+          <ul class="socials__items">
+            <li class="socials__item">
+              <a class="socials__link" href="./blank.html">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  class="socials__icon"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path class="socials__icon-stroke"
+                    d="M35 18c0 9.389-7.611 17-17 17S1 27.389
+                    1 18 8.611 1 18 1s17 7.611 17 17z"/>
+                  <path class="socials__icon-fill"
+                    d="M18 2a16 16 0 100 32 16 16 0 000-32zm4.06
+                    9.45H19v3.45h3v3.44h-3V27h-3v-8.66h-3V14.9h3v-3.45A3.25
+                    3.25 0 0119 8h3v3.45h.06z"/>
+                </svg>
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+
+            <!-- <li class="socials__item">
+              <a class="socials__link" href="./blank.html">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  class="socials__icon"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path class="socials__icon-stroke"
+                    d="M35 18c0 9.389-7.611 17-17 17S1 27.389 1 18 8.611
+                    1 18 1s17 7.611 17 17z"/>
+                  <path class="socials__icon-fill"
+                    d="M18.64 16.49c.325 0 .648-.06.95-.18a1.2 1.2 0
+                    00.64-.56 2 2 0 00.15-.8 1.55 1.55 0 00-.18-.7 1.05
+                    1.05 0 00-.61-.51 3 3 0 00-1-.17h-2v3h.57c.59-.05
+                    1.08-.06 1.48-.08zM20.12 19.08A4.851 4.851 0 0019
+                    19h-2.39v3.5h2.45a3.23 3.23 0
+                    001.21-.25c.321-.11.593-.33.77-.62a1.9 1.9 0
+                    00.22-.9 1.76 1.76 0 00-.26-1 1.6 1.6 0 00-.88-.65z"/>
+                  <path class="socials__icon-fill"
+                    d="M18 2a16 16 0 100 32 16 16 0 000-32zm6.6 20.53a3.7 3.7
+                    0 01-1.12 1.33 5.17 5.17 0 01-1.83.88 9.76 9.76 0
+                    01-2.51.27H13V11h5.45c.828-.013 1.656.024 2.48.11.543.084
+                    1.07.253 1.56.5a2.75 2.75 0 011.19 1.09c.265.473.4 1.008.39
+                    1.55a3.08 3.08 0 01-.54 1.8 3.46 3.46 0 01-1.53 1.2v.07a4 4
+                    0 012.18 1.13 3.2 3.2 0 01.8 2.26 3.841 3.841 0 01-.38 1.82z"/>
+                </svg>
+                <span class="visually-hidden">VK</span>
+              </a>
+            </li> -->
+
+            <li class="socials__item">
+              <a class="socials__link" href="./blank.html">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  class="socials__icon"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path class="socials__icon-stroke"
+                    d="M35 18c0 9.389-7.611 17-17 17S1 27.389 1 18 8.611 1 18
+                    1s17 7.611 17 17z"/>
+                  <g class="socials__icon-fill">
+                    <path
+                      d="M22.92 18A4.96 4.96 0 1113
+                      18c.001-.384.048-.767.14-1.14h-.9v6.84h11.4v-6.84h-.9c.1.373.161.755.18 1.14z"/>
+                    <path
+                      d="M18 20.66A2.66 2.66 0 1015.32 18 2.67 2.67 0 0018
+                      20.66zM23.68 12.3h-3.04v3.04h3.04V12.3z"/>
+                    <path
+                      d="M18 2a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.28 2.28 0
+                      01-2.32 2.3h-11.4A2.29 2.29 0 0110 23.7V12.3a2.29 2.29 0
+                      012.28-2.3h11.39A2.29 2.29 0 0126 12.3v11.4z"/>
+                  </g>
+                </svg>
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link" href="./blank.html">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  class="socials__icon"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path class="socials__icon-stroke"
+                    d="M35 18c0 9.389-7.611 17-17 17S1 27.389 1 18 8.611
+                    1 18 1s17 7.611 17 17z"/>
+                  <path class="socials__icon-fill"
+                    d="M18 2a16 16 0 100 32 16 16 0 000-32zm7.94 12.81c-.25
+                    6.52-3.46 10.83-11 10.7h-.48c-.45 0-4.55-.44-5.35-1.82a7.32
+                    7.32 0 005.12-1.14c-1.05-.29-2.92-.46-3.25-2.85a2.31 2.31 0
+                    001.3.12C11 19 9.53 18.3 9.61 16.17c.418.32.934.482
+                    1.46.46-.77-.23-2.15-3.24-1-4.78 2 1.79 4.07 3.48 7.8
+                    3.64.23-2.21 1.24-3.7 3.17-4.32A3.61 3.61 0 0125
+                    12.31c.74-.23 1.45-.47 2.19-.69a2.21 2.21 0 01-.93 1.71
+                    1.77 1.77 0 001.42-.47 2.9 2.9 0 01-1.74 1.95z"/>
+                </svg>
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="extra footer__extra">
+          <h2 class="visually-hidden">Дополнительная информация</h2>
+
+          <ul class="extra__items">
+            <li class="extra__item extra__item_special">
+              <a class="extra__link" href="./blank.html">
+                <svg
+                  class="extra__item-icon"
+                  width="15"
+                  height="13"
+                  viewBox="0 0 15 13"
+                  aria-hidden="true"
+                >
+                  <use xlink:href="#heart"></use>
+                </svg>
+                Для поставщиков
+              </a>
+            </li>
+            <li class="extra__item">
+              <a class="extra__link" href="./blank.html">
+                Наши документы
+              </a>
+            </li>
+            <li class="extra__item">
+              <a class="extra__link" href="./blank.html">
+                О производстве
+              </a>
+            </li>
+            <li class="extra__item">
+              <a class="extra__link" href="./blank.html">
+                Экологические стандарты
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </footer>
+    </div>
+
+    <div class="feedback-overlay">
+      <section class="feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+
+        <div class="feedback__wrapper">
+          <p class="feedback__title">Мы обязательно вам ответим!</p>
+
+          <button class="feedback__button-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+
+            <svg width="18" height="17" viewBox="0 0 18 17" aria-hidden="true">
+              <use xlink:href="#close-big"></use>
+            </svg>
+          </button>
+        </div>
+
+        <form
+          class="feedback-form"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+          name="form-feedback"
+        >
+          <label class="visually-hidden" for="feedback-name">Имя</label>
+          <input
+            class="input-field feedback-form__field"
+            type="text"
+            name="feedback-name"
+            id="feedback-name"
+            placeholder="Имя Фамилия">
+
+          <label class="visually-hidden" for="feedback-email">Электронная почта</label>
+          <input
+            class="input-field feedback-form__field"
+            type="email"
+            name="feedback-email"
+            id="feedback-email"
+            placeholder="example@email.com">
+
+          <label class="visually-hidden" for="feedback-review">Ваш текст</label>
+          <textarea
+            class="input-field feedback-form__review"
+            cols="30"
+            rows="10"
+            name="feedback-review"
+            id="feedback-review"
+            placeholder="В свободной форме"
+          ></textarea>
+
+          <button class="button feedback-form__button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <svg style="display: none">
+      <symbol id="search">
+        <path
+          d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113
+          6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0
+          008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0
+          01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0
+          014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247
+          3.01 4.256 4.256 0 01-3.003 1.25z"
+        />
+      </symbol>
+
+      <symbol id="sign">
+        <path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z"/>
+        <path
+          d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2
+          2 0 002-2V2a2 2 0 00-2-2z"
+        />
+      </symbol>
+
+      <symbol id="cart">
+        <path d="M5 3l1.2 11h12.4L20 3H5z" />
+        <path
+          fill="currentColor"
+          d="M7 20a2 2 0 002-2 2 2 0 00-2-2 2 2 0 00-2 2c0 1.1 1 2 2 2zM16.1
+          20a2 2 0 002-2 2 2 0 00-2-2 2 2 0 00-2 2c0 1.1.9 2 2 2zM5.7
+          2l-.2-2H0v2h3.7l1.5 13h14L21 2H5.7zm11.8 11H7L6 4h12.7l-1.2 9z"
+        />
+      </symbol>
+
+      <symbol id="promo-btn">
+        <circle cx="10.5" cy="10.5" r="10.5" fill="white" fill-opacity="0"/>
+        <circle cx="10.5" cy="10.5" r="9.5" stroke="white" stroke-width="2"/>
+      </symbol>
+
+      <symbol id="heart">
+        <path
+          d="M10.8 0a4.1 4.1 0 00-3.3 1.66A4.1 4.1 0 004.2 0 4.12 4.12 0
+          000 4c0 3.18 7.5 9 7.5 9S15 7.22 15 4a4.12 4.12 0 00-4.2-4z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="close-big">
+        <path
+          d="M18 1.4175L16.4885 0L8.99468 7.07747L1.50089 0L0 1.4175L7.49379
+          8.49497L0 15.5724L1.50089 17L8.99468 9.92253L16.4885 17L18
+          15.5724L10.5062 8.49497L18 1.4175Z"
+          fill="var(--modal-close-color)"
+        />
+      </symbol>
+    </svg>
+
+    <script src="./js/index.min.js"></script>
+  </body>
+</html>
